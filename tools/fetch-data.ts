@@ -47,12 +47,36 @@ const query = gql`
       }
       featuresData: features(
         ids: [
+          arrow_functions
           destructuring
           spread_operator
           nullish_coalescing
           optional_chaining
           private_fields
           proxies
+          async_await
+          promises
+          decorators
+          promise_all_settled
+          dynamic_import
+          maps
+          sets
+          typed_arrays
+          array_prototype_flat
+          big_int
+          service_workers
+          local_storage
+          intl
+          web_audio
+          webgl
+          web_animations
+          webrtc
+          web_speech
+          webvr
+          websocket
+          fetch
+          custom_elements
+          shadow_dom
         ]
       ) {
         id
