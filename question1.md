@@ -26,7 +26,7 @@
 
 ボスがミーティング中に表示していた「こんなのが欲しいんだよねー」という雑なイメージです。
 
-![](question1_image.png)
+![](https://github.com/Quramy/state-of-ts-example/raw/main/question1_image.png)
 
 ---
 
