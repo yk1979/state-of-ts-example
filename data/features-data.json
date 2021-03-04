@@ -1,0 +1,164 @@
+[
+  {
+    "id": "destructuring",
+    "name": "Destructuring",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22814,
+          "percentage": 96
+        },
+        "buckets": [
+          {
+            "count": 20332,
+            "percentage": 89.1
+          },
+          {
+            "count": 1426,
+            "percentage": 6.3
+          },
+          {
+            "count": 1056,
+            "percentage": 4.6
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "spread_operator",
+    "name": "Spread Operator",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22753,
+          "percentage": 95.7
+        },
+        "buckets": [
+          {
+            "count": 21107,
+            "percentage": 92.8
+          },
+          {
+            "count": 1147,
+            "percentage": 5
+          },
+          {
+            "count": 499,
+            "percentage": 2.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "nullish_coalescing",
+    "name": "Nullish Coalescing",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22737,
+          "percentage": 95.7
+        },
+        "buckets": [
+          {
+            "count": 10306,
+            "percentage": 45.3
+          },
+          {
+            "count": 7050,
+            "percentage": 31
+          },
+          {
+            "count": 5381,
+            "percentage": 23.7
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "optional_chaining",
+    "name": "Optional Chaining",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22746,
+          "percentage": 95.7
+        },
+        "buckets": [
+          {
+            "count": 15174,
+            "percentage": 66.7
+          },
+          {
+            "count": 4916,
+            "percentage": 21.6
+          },
+          {
+            "count": 2656,
+            "percentage": 11.7
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "private_fields",
+    "name": "Private Fields",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22786,
+          "percentage": 95.9
+        },
+        "buckets": [
+          {
+            "count": 10301,
+            "percentage": 45.2
+          },
+          {
+            "count": 10011,
+            "percentage": 43.9
+          },
+          {
+            "count": 2474,
+            "percentage": 10.9
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "proxies",
+    "name": "Proxies",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 22279,
+          "percentage": 93.7
+        },
+        "buckets": [
+          {
+            "count": 8701,
+            "percentage": 39.1
+          },
+          {
+            "count": 8604,
+            "percentage": 38.6
+          },
+          {
+            "count": 4974,
+            "percentage": 22.3
+          }
+        ]
+      }
+    }
+  }
+]
