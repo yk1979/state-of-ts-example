@@ -19,6 +19,33 @@ type DataItem = {
 
 const exampleDataSet: DataItem[] = [
   {
+    id: "proxies",
+    name: "Proxies",
+    experience: {
+      latestYearData: {
+        total: 23765,
+        completion: {
+          count: 22279,
+          percentage: 93.7
+        },
+        buckets: [
+          {
+            count: 8701,
+            percentage: 39.1
+          },
+          {
+            count: 8604,
+            percentage: 38.6
+          },
+          {
+            count: 4974,
+            percentage: 22.3
+          }
+        ]
+      }
+    }
+  },
+  {
     id: "fetch",
     name: "Fetch",
     experience: {
