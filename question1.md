@@ -56,7 +56,7 @@
 
 ---
 
-![](https://github.com/Quramy/state-of-ts-example/raw/main/question1_image.png)
+<img src="https://github.com/Quramy/state-of-ts-example/raw/main/question1_image.png" />
 
 ---
 

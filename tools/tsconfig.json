@@ -1,6 +1,13 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs"
+    "module": "commonjs",
+    "plugins": [
+      {
+        "name": "ts-graphql-plugin",
+        "tag": "gql",
+        "schema": "../tools/schema.graphql"
+      }
+     ]
   }
 }

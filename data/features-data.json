@@ -729,6 +729,60 @@
     }
   },
   {
+    "id": "wasm",
+    "name": "WebAssembly (WASM)",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 21871,
+          "percentage": 92
+        },
+        "buckets": [
+          {
+            "count": 16164,
+            "percentage": 73.9
+          },
+          {
+            "count": 3418,
+            "percentage": 15.6
+          },
+          {
+            "count": 2289,
+            "percentage": 10.5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "pwa",
+    "name": "Progressive Web Apps",
+    "experience": {
+      "latestYearData": {
+        "total": 23765,
+        "completion": {
+          "count": 21743,
+          "percentage": 91.5
+        },
+        "buckets": [
+          {
+            "count": 12148,
+            "percentage": 55.9
+          },
+          {
+            "count": 8456,
+            "percentage": 38.9
+          },
+          {
+            "count": 1139,
+            "percentage": 5.2
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": "fetch",
     "name": "Fetch",
     "experience": {
@@ -777,33 +831,6 @@
           {
             "count": 6882,
             "percentage": 31.4
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "shadow_dom",
-    "name": "Shadow DOM",
-    "experience": {
-      "latestYearData": {
-        "total": 23765,
-        "completion": {
-          "count": 22000,
-          "percentage": 92.6
-        },
-        "buckets": [
-          {
-            "count": 9263,
-            "percentage": 42.1
-          },
-          {
-            "count": 8301,
-            "percentage": 37.7
-          },
-          {
-            "count": 4436,
-            "percentage": 20.2
           }
         ]
       }

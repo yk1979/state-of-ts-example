@@ -74,9 +74,10 @@ const query = gql`
           web_speech
           webvr
           websocket
+          wasm
+          pwa
           fetch
           custom_elements
-          shadow_dom
         ]
       ) {
         id
