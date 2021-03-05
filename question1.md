@@ -1,4 +1,4 @@
-# 演習1
+# 演習 1
 
 ---
 
@@ -60,6 +60,22 @@
 
 ---
 
+## 進め方
+
+演習は TypeScript Playground 上で実施してください。
+
+---
+
+この演習は以下の 3 ステップから構成されています。
+
+- Step 1: ボスの書きかけスクリプトを TypeScript 化する
+- Step 2: 与えられたグラフライブラリを利用する
+- Step 3: 非同期通信でデータを取得する
+
+1 ~ 3 まですべて完了すると、ボスに提出グラフが表示できるようになります。
+
+---
+
 ## Step 1
 
 まずは[ボスの書きかけたスクリプトの書き残し部分](https://tsplay.dev/m3AA1w)を完成させてください。
@@ -72,7 +88,7 @@
 
 ---
 
-**注意! ボスの書いたスクリプトはどうやらエラーがあるようで、実行してもちゃんと動きません！** 
+**注意! ボスの書いたスクリプトはどうやらエラーがあるようで、実行してもちゃんと動きません！**
 
 こういうときこそ「急がば回れ」です。まずはこのコードを TypeScript 化して型をつけて、エラーがこれ以上発生しないようにしましょう。
 
@@ -285,22 +301,36 @@ const exampleDataSet = [
 ]; // 後で本物のデータに差し替える
 
 function filterDataset(dataSet) {
-  // bucketsの要素は、その技術要素を「使ったことがある, 使ったことは無いが何かは知っている, 何のことか知らない」と回答した人の人数と割合を表している
-  // ここでは「何のことかしらない」と回答した人の比率が15% 以上のデータに絞り込む
-  const filtered = dataSet.filter(data => {
-    return data.experience.latestYearData.bucket[2].percentage >= 15;
-  });
+// buckets の要素は、その技術要素を「使ったことがある, 使ったことは無いが何かは知っている, 何のことか知らない」と回答した人の人数と割合を表している
+// ここでは「何のことかしらない」と回答した人の比率が 15% 以上のデータに絞り込む
+const filtered = dataSet.filter(data => {
+return data.experience.latestYearData.bucket[2].percentage >= 15;
+});
 
-  // TODO 後でソートする!!
-  return filtered;
+// TODO 後でソートする!!
+return filtered;
 }
 
 function main() {
-  console.log(filterDataset(exampleDataSet).map(item => item.name));
+console.log(filterDataset(exampleDataSet).map(item => item.name));
 }
 
 main();
 </Playground>
+
+---
+
+ヒント: まずは dataSet の要素の型定義を作っていくとよいでしょう。
+
+```ts
+type DataItem = {
+  /* データの型 */
+};
+
+const exampleDataSet: DataItem[] = [
+  // 略
+];
+```
 
 ---
 
@@ -403,7 +433,7 @@ console.log(graph);
 
 ---
 
-無事グラフが描画されましたか？ 
+無事グラフが描画されましたか？
 
 最後に Playground の URL をボスに送りつけてやりましょう。
 
