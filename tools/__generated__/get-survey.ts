@@ -8,6 +8,7 @@ export type FeatureExpeienceFragment = {
             percentage: number | null;
         }) | null;
         buckets: (({
+            type: ("never_heard" | "heard" | "used") | null;
             count: number | null;
             percentage: number | null;
         }) | null)[] | null;
@@ -28,7 +29,7 @@ export type ToolExperienceFragment = {
         }) | null;
     }) | null;
 };
-export type GetLocaleData = {
+export type GetSurvey = {
     survey: ({
         totals: ({
             year: number | null;
@@ -53,4 +54,4 @@ export type GetLocaleData = {
         }) | null)[] | null;
     }) | null;
 };
-export type GetLocaleDataVariables = {};
+export type GetSurveyVariables = {};

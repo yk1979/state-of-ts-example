@@ -11,16 +11,19 @@ const exampleDataSet = [
         },
         buckets: [
           {
+            type: "used",
+            count: 4974,
+            percentage: 22.3
+          },
+          {
+            type: "heard",
             count: 8701,
             percentage: 39.1
           },
           {
+            type: "never_heard",
             count: 8604,
             percentage: 38.6
-          },
-          {
-            count: 4974,
-            percentage: 22.3
           }
         ]
       }
@@ -38,14 +41,17 @@ const exampleDataSet = [
         },
         buckets: [
           {
+            type: "used",
             count: 19121,
             percentage: 87.1
           },
           {
+            type: "heard",
             count: 1853,
             percentage: 8.4
           },
           {
+            type: "never_heard",
             count: 983,
             percentage: 4.5
           }
@@ -65,14 +71,17 @@ const exampleDataSet = [
         },
         buckets: [
           {
-            count: 7728,
-            percentage: 35.2
-          },
-          {
+            type: "used",
             count: 7342,
             percentage: 33.4
           },
           {
+            type: "heard",
+            count: 7728,
+            percentage: 35.2
+          },
+          {
+            type: "never_heard",
             count: 6882,
             percentage: 31.4
           }

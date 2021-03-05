@@ -8,6 +8,7 @@ export type FeatureExpeienceFragment = {
             percentage: number | null;
         }) | null;
         buckets: (({
+            type: ("never_heard" | "heard" | "used") | null;
             count: number | null;
             percentage: number | null;
         }) | null)[] | null;

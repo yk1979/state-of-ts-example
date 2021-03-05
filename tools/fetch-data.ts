@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 import { request, gql } from "graphql-request";
-import { GetLocaleData } from "./__generated__/get-locale-data";
+import { GetSurvey } from "./__generated__/get-survey";
 
 const ToolExperienceFragment = gql`
   fragment ToolExperienceFragment on ToolExperience {
@@ -30,6 +30,7 @@ const FeatureExpeienceFragment = gql`
         percentage
       }
       buckets {
+        type: id
         count
         percentage
       }
@@ -40,7 +41,7 @@ const FeatureExpeienceFragment = gql`
 const query = gql`
   ${FeatureExpeienceFragment}
   ${ToolExperienceFragment}
-  query GetLocaleData {
+  query GetSurvey {
     survey(survey: state_of_js) {
       totals {
         year(year: 2020)
@@ -107,12 +108,20 @@ const query = gql`
   }
 `;
 
+const bucketOrder = {
+  "used": 0,
+  "heard": 1,
+  "never_heard": 2
+};
+  
+
 async function fetchData() {
-  const data = await request<GetLocaleData>(
+  const data = await request<GetSurvey>(
     "http://api.stateofjs.com/graphql",
     query
   );
   const featuresData = data?.survey?.featuresData;
+  featuresData?.forEach(d => d?.experience?.latestYearData?.buckets?.sort((b1, b2) => bucketOrder[b1?.type!] - bucketOrder[b2?.type!]));
   await fs.writeFile(
     path.resolve(__dirname, "../data/features-data.json"),
     JSON.stringify(featuresData, null, 2),

@@ -11,14 +11,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 22226,
             "percentage": 97.9
           },
           {
+            "type": "heard",
             "count": 321,
             "percentage": 1.4
           },
           {
+            "type": "never_heard",
             "count": 148,
             "percentage": 0.7
           }
@@ -38,14 +41,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 20332,
             "percentage": 89.1
           },
           {
+            "type": "heard",
             "count": 1426,
             "percentage": 6.3
           },
           {
+            "type": "never_heard",
             "count": 1056,
             "percentage": 4.6
           }
@@ -65,14 +71,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 21107,
             "percentage": 92.8
           },
           {
+            "type": "heard",
             "count": 1147,
             "percentage": 5
           },
           {
+            "type": "never_heard",
             "count": 499,
             "percentage": 2.2
           }
@@ -92,14 +101,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 10306,
             "percentage": 45.3
           },
           {
+            "type": "heard",
             "count": 7050,
             "percentage": 31
           },
           {
+            "type": "never_heard",
             "count": 5381,
             "percentage": 23.7
           }
@@ -119,14 +131,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 15174,
             "percentage": 66.7
           },
           {
+            "type": "heard",
             "count": 4916,
             "percentage": 21.6
           },
           {
+            "type": "never_heard",
             "count": 2656,
             "percentage": 11.7
           }
@@ -146,16 +161,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 2474,
+            "percentage": 10.9
+          },
+          {
+            "type": "heard",
             "count": 10301,
             "percentage": 45.2
           },
           {
+            "type": "never_heard",
             "count": 10011,
             "percentage": 43.9
-          },
-          {
-            "count": 2474,
-            "percentage": 10.9
           }
         ]
       }
@@ -173,16 +191,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 4974,
+            "percentage": 22.3
+          },
+          {
+            "type": "heard",
             "count": 8701,
             "percentage": 39.1
           },
           {
+            "type": "never_heard",
             "count": 8604,
             "percentage": 38.6
-          },
-          {
-            "count": 4974,
-            "percentage": 22.3
           }
         ]
       }
@@ -200,14 +221,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 21261,
             "percentage": 95.2
           },
           {
+            "type": "heard",
             "count": 958,
             "percentage": 4.3
           },
           {
+            "type": "never_heard",
             "count": 114,
             "percentage": 0.5
           }
@@ -227,14 +251,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 21454,
             "percentage": 96.2
           },
           {
+            "type": "heard",
             "count": 690,
             "percentage": 3.1
           },
           {
+            "type": "never_heard",
             "count": 168,
             "percentage": 0.8
           }
@@ -254,14 +281,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 10619,
             "percentage": 47.4
           },
           {
+            "type": "heard",
             "count": 7963,
             "percentage": 35.6
           },
           {
+            "type": "never_heard",
             "count": 3804,
             "percentage": 17
           }
@@ -281,16 +311,19 @@
         },
         "buckets": [
           {
-            "count": 9630,
-            "percentage": 43
+            "type": "used",
+            "count": 3298,
+            "percentage": 14.7
           },
           {
+            "type": "heard",
             "count": 9471,
             "percentage": 42.3
           },
           {
-            "count": 3298,
-            "percentage": 14.7
+            "type": "never_heard",
+            "count": 9630,
+            "percentage": 43
           }
         ]
       }
@@ -308,14 +341,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 9622,
             "percentage": 42.8
           },
           {
+            "type": "heard",
             "count": 8031,
             "percentage": 35.8
           },
           {
+            "type": "never_heard",
             "count": 4806,
             "percentage": 21.4
           }
@@ -335,14 +371,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 16121,
             "percentage": 73.4
           },
           {
+            "type": "heard",
             "count": 4711,
             "percentage": 21.5
           },
           {
+            "type": "never_heard",
             "count": 1122,
             "percentage": 5.1
           }
@@ -362,14 +401,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 14719,
             "percentage": 66.9
           },
           {
+            "type": "heard",
             "count": 5267,
             "percentage": 23.9
           },
           {
+            "type": "never_heard",
             "count": 2024,
             "percentage": 9.2
           }
@@ -389,16 +431,19 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 7682,
             "percentage": 34.9
           },
           {
-            "count": 7431,
-            "percentage": 33.7
-          },
-          {
+            "type": "heard",
             "count": 6919,
             "percentage": 31.4
+          },
+          {
+            "type": "never_heard",
+            "count": 7431,
+            "percentage": 33.7
           }
         ]
       }
@@ -416,14 +461,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 8750,
             "percentage": 39.6
           },
           {
+            "type": "heard",
             "count": 6931,
             "percentage": 31.4
           },
           {
+            "type": "never_heard",
             "count": 6427,
             "percentage": 29.1
           }
@@ -443,16 +491,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 3091,
+            "percentage": 13.9
+          },
+          {
+            "type": "heard",
             "count": 14279,
             "percentage": 64.4
           },
           {
+            "type": "never_heard",
             "count": 4816,
             "percentage": 21.7
-          },
-          {
-            "count": 3091,
-            "percentage": 13.9
           }
         ]
       }
@@ -470,14 +521,17 @@
         },
         "buckets": [
           {
-            "count": 10572,
-            "percentage": 48.7
-          },
-          {
+            "type": "used",
             "count": 9114,
             "percentage": 42
           },
           {
+            "type": "heard",
+            "count": 10572,
+            "percentage": 48.7
+          },
+          {
+            "type": "never_heard",
             "count": 2017,
             "percentage": 9.3
           }
@@ -497,14 +551,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 19758,
             "percentage": 90.6
           },
           {
+            "type": "heard",
             "count": 1771,
             "percentage": 8.1
           },
           {
+            "type": "never_heard",
             "count": 284,
             "percentage": 1.3
           }
@@ -524,16 +581,19 @@
         },
         "buckets": [
           {
-            "count": 8766,
-            "percentage": 40.2
-          },
-          {
+            "type": "used",
             "count": 6842,
             "percentage": 31.3
           },
           {
+            "type": "heard",
             "count": 6217,
             "percentage": 28.5
+          },
+          {
+            "type": "never_heard",
+            "count": 8766,
+            "percentage": 40.2
           }
         ]
       }
@@ -551,16 +611,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 4376,
+            "percentage": 20
+          },
+          {
+            "type": "heard",
             "count": 12334,
             "percentage": 56.3
           },
           {
+            "type": "never_heard",
             "count": 5182,
             "percentage": 23.7
-          },
-          {
-            "count": 4376,
-            "percentage": 20
           }
         ]
       }
@@ -578,14 +641,17 @@
         },
         "buckets": [
           {
-            "count": 14778,
-            "percentage": 67.4
-          },
-          {
+            "type": "used",
             "count": 3832,
             "percentage": 17.5
           },
           {
+            "type": "heard",
+            "count": 14778,
+            "percentage": 67.4
+          },
+          {
+            "type": "never_heard",
             "count": 3303,
             "percentage": 15.1
           }
@@ -605,16 +671,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 3579,
+            "percentage": 16.3
+          },
+          {
+            "type": "heard",
             "count": 11352,
             "percentage": 51.8
           },
           {
+            "type": "never_heard",
             "count": 6981,
             "percentage": 31.9
-          },
-          {
-            "count": 3579,
-            "percentage": 16.3
           }
         ]
       }
@@ -632,16 +701,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 3064,
+            "percentage": 14
+          },
+          {
+            "type": "heard",
             "count": 10905,
             "percentage": 49.8
           },
           {
+            "type": "never_heard",
             "count": 7911,
             "percentage": 36.2
-          },
-          {
-            "count": 3064,
-            "percentage": 14
           }
         ]
       }
@@ -659,16 +731,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 1785,
+            "percentage": 8.2
+          },
+          {
+            "type": "heard",
             "count": 10804,
             "percentage": 49.4
           },
           {
+            "type": "never_heard",
             "count": 9294,
             "percentage": 42.5
-          },
-          {
-            "count": 1785,
-            "percentage": 8.2
           }
         ]
       }
@@ -686,16 +761,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 713,
+            "percentage": 3.3
+          },
+          {
+            "type": "heard",
             "count": 10812,
             "percentage": 49.4
           },
           {
+            "type": "never_heard",
             "count": 10368,
             "percentage": 47.4
-          },
-          {
-            "count": 713,
-            "percentage": 3.3
           }
         ]
       }
@@ -713,14 +791,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 13728,
             "percentage": 62.6
           },
           {
+            "type": "heard",
             "count": 6906,
             "percentage": 31.5
           },
           {
+            "type": "never_heard",
             "count": 1295,
             "percentage": 5.9
           }
@@ -740,16 +821,19 @@
         },
         "buckets": [
           {
+            "type": "used",
+            "count": 2289,
+            "percentage": 10.5
+          },
+          {
+            "type": "heard",
             "count": 16164,
             "percentage": 73.9
           },
           {
+            "type": "never_heard",
             "count": 3418,
             "percentage": 15.6
-          },
-          {
-            "count": 2289,
-            "percentage": 10.5
           }
         ]
       }
@@ -767,14 +851,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 12148,
             "percentage": 55.9
           },
           {
+            "type": "heard",
             "count": 8456,
             "percentage": 38.9
           },
           {
+            "type": "never_heard",
             "count": 1139,
             "percentage": 5.2
           }
@@ -794,14 +881,17 @@
         },
         "buckets": [
           {
+            "type": "used",
             "count": 19121,
             "percentage": 87.1
           },
           {
+            "type": "heard",
             "count": 1853,
             "percentage": 8.4
           },
           {
+            "type": "never_heard",
             "count": 983,
             "percentage": 4.5
           }
@@ -821,14 +911,17 @@
         },
         "buckets": [
           {
-            "count": 7728,
-            "percentage": 35.2
-          },
-          {
+            "type": "used",
             "count": 7342,
             "percentage": 33.4
           },
           {
+            "type": "heard",
+            "count": 7728,
+            "percentage": 35.2
+          },
+          {
+            "type": "never_heard",
             "count": 6882,
             "percentage": 31.4
           }
