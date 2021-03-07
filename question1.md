@@ -78,7 +78,7 @@
 
 ## Step 1
 
-まずは[ボスの書きかけた集計スクリプト](https://tsplay.dev/mbkdbW)を完成させてください。
+まずは[ボスの書きかけた集計スクリプト](https://tsplay.dev/mA7VXw)を完成させてください。
 
 コンソールに下記が出力されるよう、コードを修正しましょう。
 
@@ -96,6 +96,36 @@
 
 ```js
 const exampleDataSet = [
+  {
+    id: "custom_elements",
+    name: "Custom Elements",
+    experience: {
+      latestYearData: {
+        total: 23765,
+        completion: {
+          count: 21952,
+          percentage: 92.4
+        },
+        buckets: [
+          {
+            type: "used",
+            count: 7342,
+            percentage: 33.4
+          },
+          {
+            type: "heard",
+            count: 7728,
+            percentage: 35.2
+          },
+          {
+            type: "never_heard",
+            count: 6882,
+            percentage: 31.4
+          }
+        ]
+      }
+    }
+  },
   {
     id: "proxies",
     name: "Proxies",
@@ -151,36 +181,6 @@ const exampleDataSet = [
             type: "never_heard",
             count: 983,
             percentage: 4.5
-          }
-        ]
-      }
-    }
-  },
-  {
-    id: "custom_elements",
-    name: "Custom Elements",
-    experience: {
-      latestYearData: {
-        total: 23765,
-        completion: {
-          count: 21952,
-          percentage: 92.4
-        },
-        buckets: [
-          {
-            type: "used",
-            count: 7342,
-            percentage: 33.4
-          },
-          {
-            type: "heard",
-            count: 7728,
-            percentage: 35.2
-          },
-          {
-            type: "never_heard",
-            count: 6882,
-            percentage: 31.4
           }
         ]
       }
@@ -216,6 +216,36 @@ main();
 <Playground>
 const exampleDataSet = [
   {
+    id: "custom_elements",
+    name: "Custom Elements",
+    experience: {
+      latestYearData: {
+        total: 23765,
+        completion: {
+          count: 21952,
+          percentage: 92.4
+        },
+        buckets: [
+          {
+            type: "used",
+            count: 7342,
+            percentage: 33.4
+          },
+          {
+            type: "heard",
+            count: 7728,
+            percentage: 35.2
+          },
+          {
+            type: "never_heard",
+            count: 6882,
+            percentage: 31.4
+          }
+        ]
+      }
+    }
+  },
+  {
     id: "proxies",
     name: "Proxies",
     experience: {
@@ -270,36 +300,6 @@ const exampleDataSet = [
             type: "never_heard",
             count: 983,
             percentage: 4.5
-          }
-        ]
-      }
-    }
-  },
-  {
-    id: "custom_elements",
-    name: "Custom Elements",
-    experience: {
-      latestYearData: {
-        total: 23765,
-        completion: {
-          count: 21952,
-          percentage: 92.4
-        },
-        buckets: [
-          {
-            type: "used",
-            count: 7342,
-            percentage: 33.4
-          },
-          {
-            type: "heard",
-            count: 7728,
-            percentage: 35.2
-          },
-          {
-            type: "never_heard",
-            count: 6882,
-            percentage: 31.4
           }
         ]
       }

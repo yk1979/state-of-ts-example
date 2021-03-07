@@ -19,6 +19,36 @@ type DataItem = {
 
 const exampleDataSet: DataItem[] = [
   {
+    id: "custom_elements",
+    name: "Custom Elements",
+    experience: {
+      latestYearData: {
+        total: 23765,
+        completion: {
+          count: 21952,
+          percentage: 92.4
+        },
+        buckets: [
+          {
+            type: "used",
+            count: 7342,
+            percentage: 33.4
+          },
+          {
+            type: "heard",
+            count: 7728,
+            percentage: 35.2
+          },
+          {
+            type: "never_heard",
+            count: 6882,
+            percentage: 31.4
+          }
+        ]
+      }
+    }
+  },
+  {
     id: "proxies",
     name: "Proxies",
     experience: {
@@ -73,36 +103,6 @@ const exampleDataSet: DataItem[] = [
             type: "never_heard",
             count: 983,
             percentage: 4.5
-          }
-        ]
-      }
-    }
-  },
-  {
-    id: "custom_elements",
-    name: "Custom Elements",
-    experience: {
-      latestYearData: {
-        total: 23765,
-        completion: {
-          count: 21952,
-          percentage: 92.4
-        },
-        buckets: [
-          {
-            type: "used",
-            count: 7342,
-            percentage: 33.4
-          },
-          {
-            type: "heard",
-            count: 7728,
-            percentage: 35.2
-          },
-          {
-            type: "never_heard",
-            count: 6882,
-            percentage: 31.4
           }
         ]
       }
