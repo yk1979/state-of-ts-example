@@ -136,6 +136,7 @@ const COLORS: string[] = ["#caf0f8", "#90e0ef", "#0096c7"];
 
 //
 // ポイント:
+// - `Array.prototype.map` の使い方 (復習)
 // - 返却すべき型 ( `GraphItem[]` ) を上手に活用できていたか
 //
 function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
@@ -154,6 +155,7 @@ function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
 
 //
 // ポイント:
+// - `fetch` API の使い方 (復習)
 // - `data` の変数宣言時に型注釈を付与できていたか。 any を見逃していないか
 //
 async function fetchData() {

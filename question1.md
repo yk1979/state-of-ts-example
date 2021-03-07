@@ -78,7 +78,7 @@
 
 ## Step 1
 
-まずは[ボスの書きかけた集計スクリプト](https://tsplay.dev/m3AA1w)を完成させてください。
+まずは[ボスの書きかけた集計スクリプト](https://tsplay.dev/mbkdbW)を完成させてください。
 
 コンソールに下記が出力されるよう、コードを修正しましょう。
 
@@ -199,8 +199,15 @@ function filterDataset(dataSet) {
   return filtered;
 }
 
+function fetchData() {
+  // TODO 後で調査データを fetch API で取得するように書き換える！！
+  return exampleDataSet;
+}
+
 function main() {
-  console.log(filterDataset(exampleDataSet).map(item => item.name));
+  const dataSet = fetchData();
+
+  console.log(filterDataset(dataSet).map(item => item.name));
 }
 
 main();
@@ -301,18 +308,25 @@ const exampleDataSet = [
 ]; // 後で本物のデータに差し替える
 
 function filterDataset(dataSet) {
-// buckets の要素は、その技術要素を「使ったことがある, 使ったことは無いが何かは知っている, 何のことか知らない」と回答した人の人数と割合を表している
-// ここでは「何のことかしらない」と回答した人の比率が 15% 以上のデータに絞り込む
-const filtered = dataSet.filter(data => {
-return data.experience.latestYearData.bucket[2].percentage >= 15;
-});
+  // bucketsの要素は、その技術要素を「使ったことがある, 使ったことは無いが何かは知っている, 何のことか知らない」と回答した人の人数と割合を表している
+  // ここでは「何のことかしらない」と回答した人の比率が15% 以上のデータに絞り込む
+  const filtered = dataSet.filter(data => {
+    return data.experience.latestYearData.bucket[2].percentage >= 15;
+  });
 
-// TODO 後でソートする!!
-return filtered;
+  // TODO 後でソートする!!
+  return filtered;
+}
+
+function fetchData() {
+  // TODO 後で調査データを fetch API で取得するように書き換える！！
+  return exampleDataSet;
 }
 
 function main() {
-console.log(filterDataset(exampleDataSet).map(item => item.name));
+  const dataSet = fetchData();
+
+  console.log(filterDataset(dataSet).map(item => item.name));
 }
 
 main();

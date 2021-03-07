@@ -102,4 +102,15 @@ function filterDataset(dataSet) {
   return filtered;
 }
 
-console.log(filterDataset(exampleDataSet).map(item => item.name));
+function fetchData() {
+  // TODO 後で調査データを fetch API で取得するように書き換える！！
+  return exampleDataSet;
+}
+
+function main() {
+  const dataSet = fetchData();
+
+  console.log(filterDataset(dataSet).map(item => item.name));
+}
+
+main();
