@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 import { GraphItem } from "./renderBarGraph";
 
 type DataItem = {
@@ -123,9 +124,9 @@ function filterDataset(dataSet: DataItem[]) {
   return filtered;
 }
 
-function fetchData() {
-  // TODO 後で調査データを fetch API で取得するように書き換える！！
-  return exampleDataSet;
+async function fetchData() {
+  const data = await fetch("https://raw.githubusercontent.com/Quramy/state-of-ts-example/main/data/features-data.json").then(res => res.json());
+  return data;
 }
 
 function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
@@ -140,8 +141,8 @@ function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
   }))
 }
 
-export function main() {
-  const dataSet = fetchData();
+export async function main() {
+  const dataSet = await fetchData();
   const filtered = filterDataset(dataSet);
   const graph = mapToGraphItem(filtered);
 
