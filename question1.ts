@@ -1,4 +1,26 @@
-const exampleDataSet = [
+import fetch from "node-fetch";
+import { GraphItem } from "./renderBarGraph";
+
+type DataItem = {
+  id: string;
+  name: string;
+  experience: {
+    latestYearData: {
+      total: number;
+      completion: {
+        count: number,
+        percentage: number
+      },
+      buckets: {
+        type: "used" | "heard" | "never_heard";
+        count: number;
+        percentage: number;
+      }[]
+    }
+  }
+};
+
+const exampleDataSet: DataItem[] = [
   {
     id: "custom_elements",
     name: "Custom Elements",
@@ -91,26 +113,38 @@ const exampleDataSet = [
   }
 ]; // 後で本物のデータに差し替える
 
-function filterDataset(dataSet) {
+function filterDataset(dataSet: DataItem[]) {
   // bucketsの要素は、その技術要素を「使ったことがある, 使ったことは無いが何かは知っている, 何のことか知らない」と回答した人の人数と割合を表している
   // ここでは「何のことかしらない」と回答した人の比率が15% 以上のデータに絞り込む
   const filtered = dataSet.filter(data => {
-    return data.experience.latestYearData.bucket[2].percentage >= 15;
+    return data.experience.latestYearData.buckets[2].percentage >= 15;
   });
 
   // TODO 後でソートする!!
   return filtered;
 }
 
-function fetchData() {
-  // TODO 後で調査データを fetch API で取得するように書き換える！！
-  return exampleDataSet;
+async function fetchData() {
+  const data = await fetch("https://raw.githubusercontent.com/Quramy/state-of-ts-example/main/data/features-data.json").then(res => res.json());
+  return data;
 }
 
-function main() {
-  const dataSet = fetchData();
-
-  console.log(filterDataset(dataSet).map(item => item.name));
+function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
+  const colorSet = ["#227c9d", "#ffcb77", "#fe6d73"];
+  return dataSet.map((data) => ({
+    id: data.id,
+    label: data.name,
+    counts: data.experience.latestYearData.buckets.map((b, i) => ({
+      color: colorSet[i % 3],
+      count: b.count,
+    }))
+  }))
 }
 
-main();
+export async function main() {
+  const dataSet = await fetchData();
+  const filtered = filterDataset(dataSet);
+  const graph = mapToGraphItem(filtered);
+
+  console.dir(graph, {depth: null});
+}
