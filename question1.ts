@@ -1,3 +1,5 @@
+import { GraphItem } from "./renderBarGraph";
+
 type DataItem = {
   id: string;
   name: string;
@@ -126,8 +128,22 @@ function fetchData() {
   return exampleDataSet;
 }
 
+function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
+  const colorSet = ["#227c9d", "#ffcb77", "#fe6d73"];
+  return dataSet.map((data) => ({
+    id: data.id,
+    label: data.name,
+    counts: data.experience.latestYearData.buckets.map((b, i) => ({
+      color: colorSet[i % 3],
+      count: b.count,
+    }))
+  }))
+}
+
 export function main() {
   const dataSet = fetchData();
+  const filtered = filterDataset(dataSet);
+  const graph = mapToGraphItem(filtered);
 
-  console.log(filterDataset(dataSet).map(item => item.name));
+  console.dir(graph, {depth: null});
 }
