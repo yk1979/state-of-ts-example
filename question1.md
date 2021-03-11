@@ -83,7 +83,7 @@
 コンソールに下記が出力されるよう、コードを修正しましょう。
 
 ```json
-["Proxies", "Custom Elements"]
+["Custom Elements", "Proxies"]
 ```
 
 ---
