@@ -20,7 +20,7 @@ export type GraphItem = {
  * @returns グラフが描画されたSVG要素のHTML文字列
  *
  **/
-function renderBarGraph(data: GraphItem[]) {
+export function renderBarGraph(data: GraphItem[]) {
   const renderItems = data.map(d => {
     const allCounts = d.counts.reduce((s, r) => s + r.count, 0);
     if (allCounts === 0) throw new Error(`invalid data: ${d.label}`);

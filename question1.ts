@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { GraphItem } from "./renderBarGraph";
+import { GraphItem, renderBarGraph } from "./renderBarGraph";
 
 type DataItem = {
   id: string;
@@ -144,7 +144,7 @@ function mapToGraphItem(dataSet: DataItem[]): GraphItem[] {
 export async function main() {
   const dataSet = await fetchData();
   const filtered = filterDataset(dataSet);
-  const graph = mapToGraphItem(filtered);
+  const graph = renderBarGraph(mapToGraphItem(filtered));
 
   console.dir(graph, {depth: null});
 }
