@@ -356,7 +356,7 @@ const exampleDataSet: DataItem[] = [
 
 - 実際のライブラリの代わりに、以降のコードを書き足してください
 - `renderBarGraph` 関数の中身を気にする必要はありません。**型定義だけを読みましょう**
-- `(dataSet: DataItem) => GraphItem[]` となるような関数 `mapToGraphItem` を作成してください
+- `(dataSet: DataItem[]) => GraphItem[]` となるような関数 `mapToGraphItem` を作成してください
 - グラフの色には CSS で利用可能な文字列（e.g. `red`, `#ee0000` ）を代入できます。好きな色を指定してください
 
 ---
